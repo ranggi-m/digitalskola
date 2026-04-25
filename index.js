@@ -9,3 +9,7 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`App jalan di http://localhost:${port}`);
 });
+
+app.listen(3000, "0.0.0.0", () => {
+  console.log("App jalan di port 3000");
+});
